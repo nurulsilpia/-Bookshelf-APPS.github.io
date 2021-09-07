@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bookshelf Apps</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="image/books.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  
+  <body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <img src="image/books.png" width="50" alt="">
+                <a class="navbar-brand" href="/">Bookshelf Apps</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <center>
+                <img src="image/book-right.svg" width="300" style="transform: scaleX(-1);">
+                <img src="image/book-left.svg" width="300">
+            </center>
+            <div class="input-data container">
+                <form>
+                    <h3>Tambah Data</h3>
+                    <label for="title">Judul</label>
+                    <input class="form-input" type="text" id="title" required/>
+                    <label for="author">Penulis</label>
+                    <input class="form-input" type="text" id="author" required/>
+                    <label for="year">Tahun</label>
+                    <input class="form-input" type="number" id="year" required/>
+                    <div class="checkbox">
+                    <input type="checkbox" id="isComplete" />
+                    <label for="isComplete">&nbsp;&nbsp;Tandai Sebagai Selesai Dibaca</label>
+                    </div>
+                    <button class="button button-primary" type="submit">Simpan Sebagai Belum Dibaca</button>
+                </form>
+                </div>
+        </section>
+
+        <section>
+            <div class="toolbar container">
+                <input class="form-input" type="text" placeholder="Cari Buku" />
+            </div>
+        </section>
+    
+        <section>
+            <div class="container">
+            <h3>Belum Selesai Dibaca</h3>
+            <div class="list-buku belum-dibaca"></div>
+            
+            <h3>Selesai Dibaca</h3>
+            <div class="list-buku sudah-dibaca"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Bookshelf APPS &copy; 2021</p>
+    </footer>
+  
+    <script src="script.js"></script>
+  </body>
+</html>
